@@ -1,0 +1,17 @@
+body {
+  background-color: #ffffff;
+}
+
+
+h3 {
+  color: blue;
+  font-family: courier;
+  font-size: 100%;
+}
+
+p {
+  color: rgb(68, 68, 68);
+}
+.f-container{
+	display: flex;
+}
