@@ -1,35 +1,97 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>小籠包のサイト</title>
+    <title>小籠包 official website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
   </head>
+  <style>
+      body {
+      background-color: #800000;
+    }
+  </style>
   <body>
-    <h2>小籠包のサイト(仮)</h2>
-    <h5>About</h5>
-    <ul>
-      <li>name: shooronpoo</li>
-      <li>affiliation: 久留米高専２S</li>
-      <li>like&hobbies: variase things</li>
-    </ul>
-    <div class="f-container">
-      <div class="f-item"><h5>小籠包のサイト</h5><h6>金爆すき</h6></div>
-      <div class="f-item">ngngmmmmmm</div>
-      <div class="f-item"><p>は？</p></div>
-      <div class="f-item">
-        <p>
-          <a href="https://twitter.com/Shooronpoo_2003">ツイッターに飛べるぞ☆</a>
-        </p>
-        </div>
-      </div>
+    <nav class="navbar is-fixed-top is-black" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand navbar-brand-center">
+        <a class="navbar-item logo" href="/"><img alt="logo_name" src="logo.svg"></a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
     </div>
-    <!-- <img src="かわいいpp.jpg" /> -->
-  </body>
+    <div class="navbar-menu" style="background-color: black">
+        <div class="navbar-end">
+            
+            <a class="navbar-item has-text-white" href="/link1"><strong>Top</strong></a>
+            <a class="navbar-item has-text-white" href="/link2"><strong>Artworks</strong></a>
+            <a class="navbar-item has-text-white" href="/link3"><strong>Project</strong></a>
+            <a class="navbar-item has-text-white" href="/link4"><strong>Profile</strong></a>
+            <a class="navbar-item has-text-white" href="/link5"><strong>Contact</strong></a>
+        </div>
+    </div>
+</nav>
+<div>
+    <!--Top-->
+    <section class="hero is-fullheight is-success">
+    </section>
+    
+    <!--Artworks-->
+    <section>
+        <div class="columns">
+            <div class="column">
+            <h1 class="title">Artworks</h1>
+            </div>
+            <div class="column">
+                <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
+                <div class="column">
+                    <div style="background-color:white">Column</div>
+                </div>
+                <div class="column">
+                    <div style="background-color:white">Column</div>
+                </div>
+                <div class="column">
+                    <div style="background-color:white">Column</div>
+                </div>   
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!--Projects-->
+    <section>
+        
+        </section>
+    </section>
+    <!--Profile-->
+    <section></section>
+    <!--Contact-->
+    <section></section>
+</div>
 
-  
 
-  <script src="my-sample.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </html>
+
+<script>
+    
+    $(document).ready(function () {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+</script>

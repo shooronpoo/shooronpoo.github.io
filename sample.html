@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>小籠包 official website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+  </head>
+  <style>
+    body {
+      background-color: #800000;
+    }
+
+    .f-container {
+      margin: 0 auto; /*上固定*/
+    }
+
+    .navbar-brand {
+      width: 90%;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+    }
+
+    .navbar-menu {
+      background-color: palevioletred; /*ピンク*/
+    }
+
+    .container {
+      padding: 0px;
+      margin-top: 60px;
+      width: 80%;
+      margin: 0 auto;
+      background-color: black;
+    }
+
+    .columns {
+      padding: 5%;
+    }
+
+    .column {
+      height: 300px;
+    }
+    .image {
+      z-index: 9999;
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+    }
+  </style>
+
+  <body>
+    <!--
+      <div class="f-container">
+      <div class="columns">
+        <div class="column">
+          <h1><strong>shoronpoo</strong></h1>
+        </div>
+        <div class="column"><comment>space</comment></div>
+        <div class="column is-two-fifth">
+          <div class="columns">
+            <div class="column has-text-centered"><p>Top</p></div>
+            <div class="column has-text-centered"><p>Artworks</p></div>
+            <div class="column has-text-centered"><p>Project</p></div>
+            <div class="column has-text-centered"><p>Profile</p></div>
+            <div class="column has-text-centered"><p>Contents</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+
+    <nav
+      class="navbar is-fixed-top is-black"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="f-container">
+        <div class="navbar-brand navbar-brand-center">
+          <!--(1)-->
+          <a class="navbar-item logo" style="background: red"
+            ><img
+              src="https://bulma.io/images/bulma-logo.png"
+              width="112"
+              height="28"
+          /></a>
+
+          <!--(2)-->
+          <a class="navbar-end is-hidden-touch">
+            <div class="navbar-menu is-black">
+              <ul class="navbar-end">
+                <li class="navbar-item has-text-white" href="#title">
+                  Top
+                </li>
+                <li class="navbar-item has-text-white" href="#title">
+                  Artworks
+                </li>
+                <li class="navbar-item has-text-white" href="#title">
+                  Project
+                </li>
+                <li class="navbar-item has-text-white" href="#title">
+                  Profile
+                </li>
+                <li class="navbar-item has-text-white" href="#title">
+                  Contact
+                </li>
+              </ul>
+            </div>
+          </a>
+          <!--(3)-->
+          <a class="navbar-item is-hidden-desktop">
+            <!--スマホ-->
+            <a
+              role="button"
+              class="navbar-burger"
+              data-target="navMenu"
+              aria-label="menu"
+              aria-expanded="false"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+            <!--スマホ終わり-->
+          </a>
+        </div>
+      </div>
+      <!--スマホのメニュー-->
+      <a class="navbar-menu is-hidden-desktop">
+        <div class="navbar-start" style="background:grey">
+          <ul class="navbar-item">
+            <li class="navbar-item has-text-white" href="#title">
+              Top
+            </li>
+            <li class="navbar-item has-text-white" href="#title">
+              Artworks
+            </li>
+            <li class="navbar-item has-text-white" href="#title">
+              Project
+            </li>
+            <li class="navbar-item has-text-white" href="#title">
+              Profile
+            </li>
+            <li class="navbar-item has-text-white" href="#title">
+              Contact
+            </li>
+          </ul>
+        </div>
+      </a>
+    </nav>
+
+    <main class="container">
+      <div>
+        <div class="hero is-fullheight is-primary is-bold">
+          <div class="hero-body">
+            <div class="container-2">
+              <h1 class="title has-text-white">aaaa</h1>
+              <h2 class="subtitle">nnnn</h2>
+              <h2 class="text">aaaa</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column" style="border: 1px solid">
+          <h1 class="title has-text-white">Artworks</h1>
+          <div class="columns">
+            <div class="column">
+              <img src="fuku.png" />
+            </div>
+            <div class="column">
+              <img src="aaa.png" />
+            </div>
+            <div class="column">
+              <img src="miku.jpg" />
+            </div>
+            <div class="column">
+              <img src="bbb.jpg" />
+            </div>
+            <div class="column">
+              <img src="ccc.jpg" />
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <img src="fuku.png" />
+            </div>
+            <div class="column">
+              <img src="aaa.png" />
+            </div>
+            <div class="column">
+              <img src="miku.jpg" />
+            </div>
+            <div class="column">
+              <img src="bbb.jpg" />
+            </div>
+            <div class="column">
+              <img src="ccc.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column" style="border: 1px solid">aaaaa</div>
+        <div class="column">aaa</div>
+        <div class="column"></div>
+      </div>
+    </main>
+    <figure class="image is-128x128">
+      <img src="fuku.png" />
+    </figure>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </body>
+
+  <script>
+    $(document).ready(function() {
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function() {
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+      });
+    });
+  </script>
+</html>

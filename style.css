@@ -2,7 +2,6 @@ body {
   background-color: #ffffff;
 }
 
-
 h3 {
   color: blue;
   font-family: courier;
@@ -12,6 +11,6 @@ h3 {
 p {
   color: rgb(68, 68, 68);
 }
-.f-container{
-	display: flex;
+.f-container {
+  display: flex;
 }
